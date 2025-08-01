@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Binary Converter</title>
+  <link rel="stylesheet" href="App.css" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">LoGo</div>
+      <ul>
+        <li href="#">Binary</li>
+        <li href="#">Decimal</li>
+        <li href="#">Hexadecimal</li>
+        <li href="#">Convert</li>
+      </ul>
+      <div class="search"></div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="calculator">
+      <div class="field">
+        <label>Binary Number:</label>
+        <button disabled style="color: grey;">bit</button>
+      </div>
+
+      <div class="field">
+        <label>Decimal:</label>
+        <input type="number" id="decimalInput" placeholder="Enter a decimal" />
+      </div>
+
+      <div class="symbol"></div>
+
+
+
+      <div class="field">
+        <label>Hexadecimal:</label>
+        <div id="complementOutput"></div>
+      </div>
+    </div>
+
+    <section class="info">
+        <ul>
+            <li>Binary -</li> 
+            <li>Decimal -</li>
+            <li>Hexadecimal -</li>
+        </ul>
+    </section>
+<br>
+    <section class="foot" style="padding:10px">
+        <p><strong>Working with Negative Numbers!</strong></p>
+        <p>Simply find the binary representation of the positive number, and then you flip all the bits and add one to the result.</p>
+        <p>The most significant bit actually has a negative weight.</p>
+        <p>Consider this! <br>The leftmost bit acts as the "sign bit"; a sign bit of 1 means the number will be negative, and sign bit of 0 means the number is zero or positive.</p>
+    </section>
+
+    <section class="ascii">
+        <table>
+            <tr>
+                <th>Symbol</th>
+                <th>Binary Code </th>
+                <th>HTML Number</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Zero</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>One</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Two</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Three</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Four</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Five</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Six</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Seven</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Eight</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Nine</td>
+            </tr>
+            <tr>
+                <td>a</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Lowercase a</td>
+            </tr>
+            <tr>
+                <td>b</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Lowercase b</td>
+            </tr>
+            <tr>
+                <td>c</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Lowercase c</td>
+            </tr>
+            <tr>
+                <td>d</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Lowercase d</td>
+            </tr>
+            <tr>
+                <td>e</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Lowercase e</td>
+            </tr>
+            <tr>
+                <td>f</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Lowercase f</td>
+            </tr>
+        <tr>
+                <td>g</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Lowercase g</td>
+            </tr>
+            <tr>
+                <td>h</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Lowercase h</td>
+            </tr>
+            <tr>
+                <td>i</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Lowercase i</td>
+            </tr>
+            <tr>
+                <td>j</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Lowercase j</td>
+            </tr>
+            <tr>
+                <td>k</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Lowercase k</td>
+            </tr>
+            <tr>
+                <td>l</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Lowercase l</td>
+            </tr>
+            <tr>
+                <td>m</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Lowercase m</td>
+            </tr>
+            <tr>
+                <td>n</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Lowercase n</td>
+            </tr>
+            <tr>
+                <td>o</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Lowercase o</td>
+            </tr>
+            <tr>
+                <td>p</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Lowercase p</td>
+            </tr>
+            <tr>
+                <td>q</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Lowercase q</td>
+            </tr>
+            <tr>
+                <td>r</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Lowercase r</td>
+            </tr>
+            <tr>
+                <td>s</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Lowercase s</td>
+            </tr>
+            <tr>
+                <td>t</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Lowercase t</td>
+            </tr>
+            <tr>
+                <td>u</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Lowercase u</td>
+            </tr>
+            <tr>
+                <td>v</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Lowercase v</td>
+            </tr>
+            <tr>
+                <td>w</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Lowercase w</td>
+            </tr>
+            <tr>
+                <td>x</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Lowercase x</td>
+            </tr>
+            <tr>
+                <td>y</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Lowercase y</td>
+            </tr>
+            <tr>
+                <td>z</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Lowercase z</td>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Uppercase A</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Uppercase B</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Uppercase C</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Uppercase D</td>
+            </tr>
+            <tr>
+                <td>E</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Uppercase E</td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Uppercase F</td>
+            </tr>
+            <tr>
+                <td>G</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Uppercase G</td>
+            </tr>
+            <tr>
+                <td>H</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Uppercase H</td>
+            </tr>
+            <tr>
+                <td>I</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Uppercase I</td>
+            </tr>
+            <tr>
+                <td>J</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Uppercase J</td>
+            </tr>
+            <tr>
+                <td>K</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Uppercase K</td>
+            </tr>
+            <tr>
+                <td>L</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Uppercase L</td>
+            </tr>
+            <tr>
+                <td>M</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Uppercase M</td>
+            </tr>
+            <tr>
+                <td>N</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Uppercase N</td>
+            </tr>
+            <tr>
+                <td>O</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Uppercase O</td>
+            </tr>
+            <tr>
+                <td>P</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Uppercase P</td>
+            </tr>
+            <tr>
+                <td>Q</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Uppercase Q</td>
+            </tr>
+            <tr>
+                <td>R</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Uppercase R</td>
+            </tr>
+            <tr>
+                <td>S</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Uppercase S</td>
+            </tr>
+            <tr>
+                <td>T</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Uppercase T</td>
+            </tr>
+            <tr>
+                <td>U</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Uppercase U</td>
+            </tr>
+            <tr>
+                <td>V</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Uppercase V</td>
+            </tr>
+            <tr>
+                <td>W</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Uppercase W</td>
+            </tr>
+            <tr>
+                <td>X</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Uppercase X</td>
+            </tr>
+            <tr>
+                <td>Y</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Uppercase Y</td>
+            </tr>
+            <tr>
+                <td>Z</td>
+                <td>Binary Code </td>
+                <td>HTML Number</td>
+                <td>Uppercase Z</td>
+            </tr>
+            
+
+
+    
+        </table>
+    </section>
+  </main>
+
+  <script src="App.js"></script>
+</body>
+</html>

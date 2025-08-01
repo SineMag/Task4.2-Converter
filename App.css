@@ -1,0 +1,128 @@
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0e0e2d;
+  color: #eee;
+  padding: 40px 20px;
+}
+h1 {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+h1 span {
+  color: #f59eff;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  color: #999;
+  padding: 10px 0;
+}
+nav .logo {
+  color: #f59eff;
+  font-weight: bold;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+nav ul li {
+  cursor: pointer;
+}
+.search {
+  cursor: pointer;
+}
+
+/* Calculator Box */
+.calculator {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #1c1c3a;
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  flex: 1;
+  min-width: 150px;
+}
+.field label {
+  margin-bottom: 10px;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+.field input {
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  width: 100%;
+  text-align: center;
+  background-color: #292957;
+  color: #f59eff;
+}
+.field button {
+  padding: 10px 20px;
+  background-color: #292957;
+  border: none;
+  border-radius: 6px;
+  color: #f59eff;
+  cursor: default;
+}
+.field div {
+  background-color: #292957;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #f59eff;
+  min-width: 160px;
+  text-align: center;
+}
+.symbol {
+  font-size: 2rem;
+  margin: 0 10px;
+  color: #f59eff;
+}
+
+/* Info Section */
+.info {
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #ccc;
+}
+.info h2 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
