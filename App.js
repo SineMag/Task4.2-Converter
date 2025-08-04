@@ -55,17 +55,17 @@ function binaryOperation() {
   let res;
 
   switch (operation.value) {
+    case 'divide':
+      res = x / y;
+      break;
+    case 'multiply':
+      res = x * y;
+      break;
     case 'add':
       res = x + y;
       break;
-    case 'and':
-      res = x & y;
-      break;
-    case 'or':
-      res = x | y;
-      break;
-    case 'xor':
-      res = x ^ y;
+    case 'subtract':
+      res = x - y;
       break;
   }
 
