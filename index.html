@@ -12,51 +12,80 @@
     <nav>
       <div class="logo">LoGo</div>
       <ul>
-        <li href="#">Binary</li>
-        <li href="#">Decimal</li>
-        <li href="#">Hexadecimal</li>
-        <li href="#">Convert</li>
+        <li>Binary</li>
+        <li>Decimal</li>
+        <li>Hexadecimal</li>
+        <li>Convert</li>
       </ul>
-      <div class="search"></div>
     </nav>
   </header>
 
-  <main>
-    <div class="calculator">
-      <div class="field">
-        <label>Binary Number:</label>
-        <button disabled style="color: grey;">bit</button>
-      </div>
+  <main style="display: flex; justify-content: space-between; gap: 30px; flex-wrap: wrap;">
 
-      <div class="field">
-        <label>Decimal:</label>
-        <input type="number" id="decimalInput" placeholder="Enter a decimal" />
-      </div>
+    <div style="flex: 1;">
+      
+      <section class="converter">
+        <h1>Converter</h1>
+        <div class="converter-box">
+          <div class="field">
+            <label for="bin">Binary:</label>
+            <input type="text" id="bin" placeholder="e.g. 1010" />
+          </div>
+          <div class="field">
+            <label for="dec">Decimal:</label>
+            <input type="number" id="dec" placeholder="e.g. 10" />
+          </div>
+          <div class="field">
+            <label for="hex">Hexadecimal:</label>
+            <input type="text" id="hex" placeholder="e.g. A" />
+          </div>
+        </div>
+      </section>
 
-      <div class="symbol"></div>
+      <section class="info">
+        <h2>Number Systems</h2>
+        <ul style="list-style-type: none;">
+          <li>Binary - base 2</li>
+          <li>Decimal - base 10</li>
+          <li>Hexadecimal - base 16</li>
+        </ul>
+      </section>
 
+      <section class="foot">
+        <p><strong>Working with Negative Numbers </strong></p>
+        <p>Flip all bits of the positive number and add one.</p>
+      </section>
 
-
-      <div class="field">
-        <label>Hexadecimal:</label>
-        <div id="complementOutput"></div>
-      </div>
     </div>
 
-    <section class="info">
-        <ul>
-            <li>Binary -</li> 
-            <li>Decimal -</li>
-            <li>Hexadecimal -</li>
-        </ul>
-    </section>
-<br>
-    <section class="foot" style="padding:10px">
-        <p><strong>Working with Negative Numbers!</strong></p>
-        <p>Simply find the binary representation of the positive number, and then you flip all the bits and add one to the result.</p>
-        <p>The most significant bit actually has a negative weight.</p>
-        <p>Consider this! <br>The leftmost bit acts as the "sign bit"; a sign bit of 1 means the number will be negative, and sign bit of 0 means the number is zero or positive.</p>
-    </section>
+    <aside class="calculator" style="flex: 0 0 300px;">
+      <h2>Binary Calculator</h2>
+
+      <div class="field">
+        <label>Please Enter First Binary:</label>
+        <input type="text" id="binary1" placeholder="e.g. 1010" />
+      </div>
+
+      <div class="field">
+        <label>Please Enter Second Binary:</label>
+        <input type="text" id="binary2" placeholder="e.g. 1100" />
+      </div>
+
+      <div class="field">
+        <label>Please Select Operator:</label>
+        <select id="operation">
+          <option value="add">ADD</option>
+          <option value="and">AND</option>
+          <option value="or">OR</option>
+          <option value="xor">XOR</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Results:</label>
+        <div id="calcResult">—</div>
+      </div>
+    </aside>
 
     <section class="ascii">
         <table>
@@ -439,12 +468,9 @@
                 <td>Uppercase Z</td>
             </tr>
             
-
-
-    
-        </table>
-    </section>
   </main>
+
+
 
   <script src="App.js"></script>
 </body>
